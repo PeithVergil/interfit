@@ -1,0 +1,721 @@
+/*
+Theme Name: Interfit
+Theme URI: http://110411.redber.net/interfit/
+Author: Peith Vergil (Trimorph)
+Description: Interfit custom theme.
+Version: 1.0
+Tags: interfit, custom, theme 
+*/
+
+body{
+    background:white;
+}
+
+label, p, a {
+	font-family:Trendex Condensed SSi;
+}
+label{
+	text-transform: uppercase;
+	font-size:30px;
+}
+span{
+	color: #45B8F4;
+}
+p a{
+	text-decoration: none;
+	color: #116098;
+}
+p{
+	line-height: 120%;
+}
+a img{
+	border: 0;
+}
+/************************************************************  HEADER   *********************************************************************/
+.header{
+	width:auto;
+	margin: 35px auto 125px;
+	width:1080px;
+}
+.header div{
+	overflow:hidden;
+	position:relative;
+}
+.header div a#logo img{
+	border:0;
+}
+
+.header div div.navigation{
+	float:right;
+	overflow:hidden;
+	width:auto;
+	margin:0;
+}
+.header div div.navigation ul{
+	list-style: none;	
+}
+.header div div.navigation ul li{
+	float: left;
+	background:url(images/button-gray.png);	
+	margin-left: 17px;
+	height:33px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(border-radius.htc);
+}
+.header div div.navigation ul li.active{
+	background:url(images/button.png);	
+	height:33px;
+	
+}
+.header div div.navigation ul li a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Trendex Condensed SSi;
+	font-size:15px;
+	text-shadow: 1px 0 0 #5d5e5f;
+	border-width: 1px;
+	/*border-style: none none none solid; */
+	border-color:#fff;
+	height:33px;
+	display:inline-block;
+	line-height:33px;
+	padding: 0 22px;
+	text-transform: uppercase;
+}
+.header div div.navigation ul li.active a{
+	color:#000;
+	text-shadow: 0 0 0;
+}
+
+
+/************************************************************  BODY   *********************************************************************/
+.body{
+	height:auto;
+	position:relative;
+}
+.ip-1{
+	width:1080px;
+	margin:0 auto;
+}
+.body-navigation{
+	display:block;
+	padding-bottom: 95px;
+}
+#left-navigation{
+	float:left;
+	height:40px;
+	width:auto;
+	text-transform: uppercase;
+}
+ #left-navigation label{
+	font-family:Trendex Condensed SSi;
+	font-size:30px;
+}
+#left-navigation label span{
+	color: #1576A8;
+}
+#navigation{
+	float:left;
+	height:31px;
+	width:auto;
+	margin-top: 3px;
+}
+#navigation ul{
+	list-style:none;
+	margin:0 auto;
+	padding:0 20px;
+	
+	overflow:hidden;
+}
+#navigation ul li{
+	float:left;
+	text-align:center;
+	background:url(images/button-black.png);	
+	margin-left: 7px;
+	border-radius: 5px;
+}
+#navigation ul li.selected{
+	background:url(images/button-lightblue.png);	
+}
+#navigation ul li a{
+	font-family:Trendex Light Condensed SSi;
+	color:#FFF;
+	font-size:14px;
+	text-decoration:none;
+	line-height:31px;
+	padding: 0 17px;
+	font-weight: normal;
+}
+/*  HOMEPAGE   */
+.center_holder {
+    padding: 10px;
+}
+.left_wrapper {
+    float: left;
+    width: 300px;
+    padding:10px 10px 10px 10px;
+    margin-left:75px;
+}
+.center_wrapper{
+    float:left;
+}
+
+.right_wrapper{
+    float:left;
+    padding:10px;
+}
+.medium_size {
+    float: left;
+    width: 125px;
+}
+
+.large_size {
+    float: left;
+    margin-top: 60px;
+    width: 152px;
+}
+
+.center_content_img {
+    background: url("images/virtual-lcd.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 929px;
+    width: 325px;
+    margin:0;
+}
+.left_side_slider .medium_size .human_image {
+    background: url("images/interfit-homepage-v1.2_03.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 136px;
+    margin-left: 25px;
+    width: 73px;
+        
+}
+.left_side_slider .medium_size .shadow_img {
+    background: url("images/interfit-homepage-v1_07.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 18px;
+    width: 132px;
+    background-position: 27px -1px;
+    background-size: 71px 22px;  
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.left_side_slider .medium_size .buttong_image {
+    background: url("images/interfit-button2_03.jpg") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 48px;
+    margin-left: 12px;
+    width: 105px;
+}
+
+.left_side_slider .large_size .human_image {
+    background: url("images/home iPad.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 200px;
+    margin-left: 5px;
+    width: 150px;
+}
+.left_side_slider .large_size .shadow_img {
+    background: url("images/interfit-homepage-v1_07.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 18px;
+    margin-left: 11px;
+    width: 132px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+.left_side_slider .large_size .buttong_image {
+    background: url("images/iPad Logo.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 53px;
+    width: 157px;
+}
+
+.right_side_slider .medium_size .human_image {
+    background: url("images/9.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 136px;
+    margin-left: 25px;
+    width: 73px;
+}
+.right_side_slider .medium_size .shadow_img {
+    background: url("images/interfit-homepage-v1_07.png") no-repeat scroll 0 0 transparent;
+   display: inline-block;
+    height: 18px;
+    width: 132px;
+    background-position: 27px -1px;
+    background-size: 71px 22px; 
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.right_side_slider .medium_size .buttong_image {
+    background: url("images/Android phone logo.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 44px;
+    margin-left: 12px;
+    width: 109px;
+}
+
+.right_side_slider .large_size .human_image {
+    background: url("images/8.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 200px;
+    margin-left: 5px;
+    width: 150px;
+}
+.right_side_slider .large_size .shadow_img {
+    background: url("images/interfit-homepage-v1_07.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 18px;
+    margin-left: 11px;
+    width: 132px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+.right_side_slider .large_size .buttong_image {
+    background: url("images/Android Tablet logo.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 55px;
+    width: 159px;
+}
+
+.top_slider_left {
+    display: inline-block;
+    height: 225px;
+    padding-top: 10px;
+    width: 100%;
+}
+.top_slider_left .slider1 {
+    background: url("images/slideshow5.png") no-repeat scroll 6px 130px transparent;
+    display: inline-block;
+    float: left;
+    height: 225px;
+    width: 60px;
+}
+
+.top_slider_left .slider2 {
+    background: url("images/slideshow4.png") no-repeat scroll 1px 80px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.top_slider_left .slider3 {
+    background: url("images/slideshow3.png") no-repeat scroll 5px 47px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.top_slider_left .slider4 {
+    background: url("images/slideshow2.png") no-repeat scroll 1px 30px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.top_slider_left .slider5 {
+    background: url("images/slideshow1.png") no-repeat scroll 1px 9px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.top_slider_right {
+    height: 225px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.top_slider_right .slider1 {
+    background: url("images/14.png") no-repeat scroll -4px 7px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.top_slider_right .slider2 {
+    background: url("images/13.png") no-repeat scroll -2px 25px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+.top_slider_right .slider3 {
+    background: url("images/12.png") no-repeat scroll 14px 40px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+.top_slider_right .slider4 {
+    background: url("images/11.png") no-repeat scroll 1px 56px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+.top_slider_right .slider5 {
+    background: url("images/10.png") no-repeat scroll 1px 112px transparent;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 60px;
+}
+
+.left_side_slider {
+    height: 400px;
+    margin-left: 20px;
+    width: 100%;
+}
+.left_nav {
+    background: url("images/next_border_15.png") no-repeat scroll 42px 0 transparent;
+    padding: 23px;
+}
+
+.carousel-nav {
+	left: 0;
+	position: absolute;
+	top: 675px;
+	width: 1011px;
+	z-index: 1000;
+}
+
+.carousel-nav .left_nav_button{
+    background:url(images/virtual-sliderbuttonleft.png);
+    display:inline-block;
+    width:35px;
+    height:35px;
+    float: left;
+    background-repeat:no-repeat;
+}
+
+.right_side_slider{
+    height: 400px;
+    
+}
+
+.right_nav {
+    background: url(images/prev_border_15.jpg) no-repeat scroll 200px 0 transparent;
+    height: 43px;
+    padding: 23px;
+}
+
+.carousel-nav .right_nav_button {
+    background: url("images/virtual-sliderbuttonright.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    float: right;
+    height: 35px;
+    width: 35px;
+}
+
+.meet_trainers {
+    height: 187px;
+}
+.meet_trainers .trainer1{
+    float:left;
+    width: 90px;
+    
+}
+
+.meet_trainers .trainer2{
+    float:left;
+    width: 90px;
+    
+}
+
+.meet_trainers .trainer3{
+    float:left;
+    width: 90px;
+    margin-left: 10px;
+    
+}
+
+.meet_trainers .trainer1 .trainer_image {
+    background: url("images/home-trainer1.png") no-repeat scroll 0 1px transparent;
+    display: inline-block;
+    height: 139px;
+    width: 90px;
+}
+
+.meet_trainers .trainer1 .name_button {
+    background: url("images/interfit-homepage-v1_15.jpg") no-repeat scroll -4px -2px transparent;
+    display: inline-block;
+    height: 30px;
+    margin-top: -5px;
+    width: 72px;
+}
+.meet_trainers .trainer2 .trainer_image {
+    background: url("images/home-trainer2.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 139px;
+    width: 90px;
+}
+
+.meet_trainers .trainer2 .name_button {
+    background: url("images/interfit-homepage-v1_17.jpg") no-repeat scroll -1px -2px transparent;
+    display: inline-block;
+    height: 30px;
+    margin-top: -5px;
+    width: 88px;
+    margin-left:4px;
+}
+
+.meet_trainers .trainer3 .trainer_image {
+    background: url("images/home-trainer3.png") no-repeat scroll 12px 50% transparent;
+    display: inline-block;
+    height: 139px;
+    width: 90px;
+}
+
+.meet_trainers .trainer3 .name_button {
+    background: url("images/interfit-homepage-v1_19.jpg") no-repeat scroll -2px -2px transparent;
+    display: inline-block;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: -5px;
+    width: 72px;
+}
+
+.meet_trainers_title{
+    float: left;
+	margin-top: -30px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer_wrapper {
+    float: left;
+    height: 200px;
+    width: 100%;
+    background:url('../images/separator.png');
+    background-repeat: no-repeat;
+    background-size: 100% 15px;
+}
+
+.download_button{
+    height: 200px;
+}
+
+.download_button .button {
+    background: url("images/home-download logo.png") no-repeat scroll 0 0 transparent;
+     height: 106px;
+    width: 279px;
+    margin:auto;
+    margin-top:80px;
+}
+
+
+/*  PROGRAM   */
+.interfit {
+	display: inline-table;
+	margin-bottom: 25px;
+}
+.interfit img {
+	float: left;
+	margin-left: 54px;
+}
+.interfit-details{
+	margin-left: 285px;
+}
+.interfit-details label{
+	font-family: Trendex Condensed SSi;
+	font-size:30px;
+	text-transform: uppercase;
+	font-weigth: normal;
+}
+.interfit-details p{
+	font-family: Trendex Condensed SSi;
+	font-size:15px;
+}
+.challenge{
+	background:url(images/blue-bg.png);
+	border-top-image: url(images/program-upper-shadow.png);
+	padding-bottom: 65px;
+    padding-top: 65px;
+	margin-bottom: 65px;
+    margin-top: 45px;
+	
+}
+.challenge .challenge-top{
+	background: url(images/program-upper-shadow.png) no-repeat scroll center transparent;
+	height: 7px;
+	margin-top: -64px;
+}
+.challenge p{
+	color: #FFF;
+	font-family: Trendex Condensed SSi;
+	font-size:14px;
+}
+.challenge #ic-title{
+	font-family:Trendex Condensed SSi;
+	font-size:30px;
+	text-align: center;
+	padding-top: 56px;
+	text-transform: uppercase;
+	color: #45b8f4;
+}
+.challenge #ic-title span{
+	color: #FFF;
+}
+       /* VIRTUAL   */
+.left_side{
+	float: left;
+}
+.right_side{
+	float: left;
+	width: 750px;
+}
+.right_side label{
+	font-family:Trendex Condensed SSi;
+	font-size:30px;
+	text-transform: uppercase;padding-left: 30px; /** added */
+	color: #000;
+}
+.right_side label span{
+	color: #45b8f4;
+}
+.right_side p, li{
+	font-family:Trendex Condensed SSi;
+	font-size:15px;
+}
+.virtual-enquire{
+	padding-left: 30px;
+	padding-top: 28px;
+	padding-bottom: 60px;
+}
+.virtual-separator{
+	background: url("images/separator.png") no-repeat scroll 28px 1px transparent;
+	background-size: 743px 10px;
+	height: 10px;
+	padding-bottom: 30px;
+}
+
+.designer_brand{
+		text-align:center;
+		width:700px;
+		float:left;
+		margin:10px 30px;
+	}
+.designer_brand .prev{float:left;padding:20px 10px; margin-top: 40px;}
+.designer_brand .next{float:left;padding:20px 10px; margin-top: 40px;}
+.designer_brand .slider_item{float:left;}
+
+#carousel-container {
+    background-color: #FFFFFF;
+    height: 986px;
+    position: relative;
+    width: 1011px;
+}
+
+.carousel-images {
+    height:675px;
+    overflow:scroll;
+    width:1011px;
+    z-index: 998;
+}
+
+.carousel-overlay {
+    background: url(images/carousel-overlay.png) no-repeat;
+    height: 986px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1011px;
+    z-index: 999;
+}
+
+.carousel-links1,
+.carousel-links2 {
+	left: 0;
+	position: absolute;
+	width: 1011px;
+	z-index: 1000;
+}
+
+.carousel-links1 {
+	top: 450px;
+}
+
+.carousel-links2 {
+	top: 575px;
+}
+
+.carousel-links1 .carousel-ln-l,
+.carousel-links2 .carousel-ln-l {
+	float: left;
+}
+
+.carousel-links1 .carousel-ln-r,
+.carousel-links2 .carousel-ln-r {
+	float: right;
+}
+
+.carousel-links1 .carousel-ln-l {
+	margin-left: 48px;
+}
+.carousel-links1 .carousel-ln-r {
+	margin-right: 60px;
+}
+
+.carousel-links2 .carousel-ln-l {
+	margin-left: 160px;
+}
+.carousel-links2 .carousel-ln-r {
+	margin-right: 175px;
+}
+
+.carousel-links1 .button_image,
+.carousel-links2 .button_image {
+    display: inline-block;
+}
+
+.carousel-links1 .button_image {
+    height: 48px;
+    width: 105px;
+}
+
+.carousel-links2 .button_image {
+    height: 53px;
+    width: 157px;
+}
+
+.carousel-links1 .carousel-ln-l .button_image {
+	background: url(images/interfit-button2_03.jpg) no-repeat scroll 0 0 transparent;
+}
+.carousel-links1 .carousel-ln-r .button_image {
+	background: url("images/Android phone logo.png") no-repeat scroll 0 0 transparent;
+}
+
+.carousel-links2 .carousel-ln-l .button_image {
+	background: url("images/iPad Logo.png") no-repeat scroll 0 0 transparent;
+}
+.carousel-links2 .carousel-ln-r .button_image {
+	background: url("images/Android Tablet logo.png") no-repeat scroll 0 0 transparent;
+}
+
+/************************************************************  FOOETR   *********************************************************************/
+.footer_wrapper {
+    float: left;
+    height: 200px;
+    width: 100%;
+    background:url('../images/separator.png');
+    background-repeat: no-repeat;
+    background-size: 100% 15px;
+}
+.footer-details {
+    margin-top: 60px;
+}
+
+.clear {
+	clear: both;
+}
