@@ -38,7 +38,7 @@
         <?php wp_head(); ?>
         
 		<?php if ( is_home() || is_front_page() ) { ?>
-	    	<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/cloud-carousel.1.0.5.min.js"></script>
+	    	<?php wp_enqueue_script('cloud_carousel_js'); ?>
 	    	
 	    	<script type="text/javascript">
 			(function($) {

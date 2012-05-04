@@ -91,6 +91,40 @@ a img{
 
 
 /************************************************************  BODY   *********************************************************************/
+.program-tabs {
+}
+
+.program-cont {
+	margin: 60px 0;
+}
+
+#lbls {
+	text-transform: uppercase;
+    font-family: Trendex Condensed SSi;
+    font-size: 30px;
+    padding: 7px 0;
+}
+
+#lbls span.lbl1 {
+	color: #333333;
+}
+
+#lbls span.lbl2 {
+    color: #1576A8;
+}
+
+#tabs .btn-primary {
+	background: url("images/button-black.png") repeat scroll 0 0 transparent;
+}
+
+#tabs .btn-primary.selected {
+	background: url("images/button-lightblue.png") repeat scroll 0 0 transparent;
+}
+
+.program-cont .interfit {
+	display: none;
+}
+
 .body{
 	height:auto;
 	position:relative;
@@ -703,12 +737,22 @@ a img{
 	background: url("images/Android Tablet logo.png") no-repeat scroll 0 0 transparent;
 }
 
-/************************************************************  FOOETR   *********************************************************************/
+/************************************************************  FOOTER   *********************************************************************/
+#foot {
+	margin-top: 50px;
+}
+
+#foot .p1 {
+	font-family: Trendex Condensed SSi;
+	font-size: 30px;
+    text-transform: uppercase;
+}
+
 .footer_wrapper {
     float: left;
     height: 200px;
     width: 100%;
-    background:url('../images/separator.png');
+    background:url('images/separator.png');
     background-repeat: no-repeat;
     background-size: 100% 15px;
 }

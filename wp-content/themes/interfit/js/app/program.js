@@ -1,19 +1,18 @@
 (function($) {
 	$(function() {
-		var $items = $('div#navigation ul li');
-		var $views = $('div.interfit');
+		var $tabs = $('#tabs a');
+		var $cont = $('.interfit');
 		
-		$('div.interfit:not(#weight)').hide();
+		$('#weight').show();
 		
-		$('div#navigation ul li a').click(function(e) {
-			$items.removeClass('selected');
-			$views.hide();
+		$tabs.click(function() {
+			$tabs.removeClass('selected');
+			$(this).addClass('selected');
 			
-			var $ln = $(this).attr('href');
-			$($ln).fadeIn('slow');
+			$cont.hide();
 			
-			var $li = $(this).parent();
-			$li.addClass('selected');
+			var val = $(this).attr('href');
+			$(val).fadeIn('slow');
 			
 			return false;
 		});

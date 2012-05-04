@@ -1,12 +1,5 @@
 <?php
 
-// function load_jqueryui() {
-// 	if ( !is_admin() ) {
-// 		wp_register_script('jqueryui', get_bloginfo('template_url') . '/js/jquery.ui.js', array('jquery'), '1.8.20');
-// 	}
-// }
-// add_action('init', 'load_jqueryui');
-
 function interfit_init() {
 	if ( !is_admin() ) {
 		// Bootstrap CSS
@@ -17,6 +10,9 @@ function interfit_init() {
 		
 		// Interfit CSS
 		wp_register_style('interfit_css', get_bloginfo('template_url') . '/style.css', false, '1.0');
+		
+		// Cloud Carousel JS
+		wp_register_script('cloud_carousel_js', get_bloginfo('template_url') . '/js/cloud-carousel/cloud-carousel.js', array('jquery'), '1.0.5');
 	}
 }
 add_action('init', 'interfit_init');

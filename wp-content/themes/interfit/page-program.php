@@ -7,32 +7,22 @@
 
 <?php get_header(); ?>
 
-<div class="body">
-	<div class="ip-1">
-		<div class="body-navigation">
-			<div id="left-navigation">
-				<label>interfit <span>programs</span></label>
-			</div>
-			<div id="navigation">
-				<ul>
-					<li class="selected">
-						<a href="#weight">Weight</a>
-					</li>
-					<li>
-						<a href="#cardio">Cardio</a>
-					</li>
-					<li>
-						<a href="#change">Interfit Change</a>
-					</li>
-					<li>
-						<a href="#intbox">Interfit Box</a>
-					</li>
-					<li>
-						<a href="#pilate">Pilates</a>
-					</li>	
-				</ul>
-			</div>
-		</div><!--<div style="clear:both;">fdfdfd</div>-->
+<div class="container">
+	<div class="row-fluid show-grid program-tabs">
+		<div class="span5" id="lbls">
+			<span class="lbl1">interfit</span>
+			<span class="lbl2">programs</span>
+		</div>
+		<div class="span7" id="tabs">
+			<a href="#weight" class="btn btn-primary selected">Weight</a>
+			<a href="#cardio" class="btn btn-primary">Cardio</a>
+			<a href="#change" class="btn btn-primary">Interfit Change</a>
+			<a href="#intbox" class="btn btn-primary">Interfit Box</a>
+			<a href="#pilate" class="btn btn-primary">Pilates</a>
+		</div>
+	</div>
+	
+	<div class="row-fluid show-grid program-cont">
 		<div class="interfit" id="weight">
 			<img alt="logo" src="<?php bloginfo( 'template_url' ); ?>/images/programs-pic1.png"> 
 			<div class="interfit-details">
@@ -51,6 +41,7 @@
 				</p>
 			</div>
 		</div>
+		
 		<div class="interfit" id="cardio">
 			<img alt="logo" src="<?php bloginfo( 'template_url' ); ?>/images/programs-pic2.png"> 
 			<div class="interfit-details">
@@ -134,6 +125,6 @@
 	</div>
 </div>
 
-<?php wp_enqueue_script('interfit_program', get_bloginfo('template_url') . '/js/app/program.js', array('jqueryui'), '1.0', true); ?>
+<?php wp_enqueue_script('interfit_program', get_bloginfo('template_url') . '/js/app/program.js', array('jquery'), '1.0', true); ?>
 
 <?php get_footer(); ?>
