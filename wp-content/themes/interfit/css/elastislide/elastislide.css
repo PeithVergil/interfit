@@ -1,0 +1,54 @@
+/* Elastislide Style */
+.es-carousel-wrapper{
+	
+	padding:10px 37px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position:relative;
+}
+.es-carousel{
+	overflow:hidden;
+	width: 574px;
+}
+.es-carousel ul{
+	display:none;
+}
+.es-carousel ul li{
+	height:100%;
+	float:left;
+	display:block;
+}
+.es-carousel ul li a{
+	display:block;
+	border-style:solid;
+	border-color:#222;
+}
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+}
+.es-nav span{
+	background: url("../images/virtual-sliderbuttonleft.png") no-repeat scroll left top transparent;	
+    cursor: pointer;
+    height: 34px;
+    left: -10px;
+    margin-top: -13px;
+    opacity: 0.8;
+    position: absolute;
+    text-indent: -9000px;
+    top: 50%;
+    width: 37px;
+	
+}
+.es-nav span.es-nav-next{
+	background: url("../images/virtual-sliderbuttonright.png") no-repeat scroll left top transparent; 
+	background-position: right top;
+    left: auto;
+    right: -13px;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}

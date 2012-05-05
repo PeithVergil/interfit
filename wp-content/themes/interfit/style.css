@@ -32,6 +32,23 @@ a img{
 	border: 0;
 }
 /************************************************************  HEADER   *********************************************************************/
+.navbar-inner {
+	background: none;
+    box-shadow: none;
+}
+
+#nav-buttons {
+	padding: 18px 0;
+}
+
+#nav-buttons .btn-primary {
+	background: url(images/button-gray.png) repeat scroll 0 0 transparent;
+}
+
+#nav-buttons .btn-primary.selected {
+    background: url(images/button-lightblue.png) repeat scroll 0 0 transparent;
+}
+
 .header{
 	width:auto;
 	margin: 35px auto 125px;
@@ -98,27 +115,59 @@ a img{
 	margin: 60px 0;
 }
 
-#lbls {
-	text-transform: uppercase;
-    font-family: Trendex Condensed SSi;
-    font-size: 30px;
-    padding: 7px 0;
+
+#visual .lbls,
+#visual .tabs,
+#visual .txts,
+#visual .enqr,
+#visual .sptr {
+	margin-bottom: 20px;
 }
 
-#lbls span.lbl1 {
+#lbls {
+	font-family: Trendex Condensed SSi;
+	font-size: 30px;
+	padding: 7px 0;
+	text-transform: uppercase;
+}
+
+#visual .lbls {
+	font-family: Trendex Condensed SSi;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#lbls span.lbl1,
+#visual span.lbl1 {
 	color: #333333;
 }
 
-#lbls span.lbl2 {
+#lbls span.lbl2,
+#visual span.lbl2 {
     color: #1576A8;
 }
 
-#tabs .btn-primary {
+#tabs .btn-primary,
+#visual .tabs .btn-primary {
 	background: url("images/button-black.png") repeat scroll 0 0 transparent;
 }
 
-#tabs .btn-primary.selected {
+#tabs .btn-primary.selected,
+#visual .tabs .btn-primary.selected {
 	background: url("images/button-lightblue.png") repeat scroll 0 0 transparent;
+}
+
+#visual .sptr {
+	background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("images/separator.png");
+    background-origin: padding-box;
+    background-position: 28px 1px;
+    background-repeat: no-repeat;
+    background-size: 743px 10px;
+    height: 10px;
+    padding-bottom: 30px;
 }
 
 .program-cont .interfit {
@@ -416,14 +465,6 @@ a img{
     padding: 23px;
 }
 
-.carousel-nav {
-	left: 0;
-	position: absolute;
-	top: 675px;
-	width: 1011px;
-	z-index: 1000;
-}
-
 .carousel-nav .left_nav_button{
     background:url(images/virtual-sliderbuttonleft.png);
     display:inline-block;
@@ -644,27 +685,47 @@ a img{
 .designer_brand .next{float:left;padding:20px 10px; margin-top: 40px;}
 .designer_brand .slider_item{float:left;}
 
+#carousel-container,
+#carousel-container .carousel-nav,
+#carousel-container .carousel-links1,
+#carousel-container .carousel-links2,
+#carousel-container .carousel-overlay {
+	width: 940px;
+}
+
 #carousel-container {
     background-color: #FFFFFF;
-    height: 986px;
+    height: 917px;
     position: relative;
-    width: 1011px;
+}
+
+#carousel-container .carousel-images,
+#carousel-container .carousel-images-container {
+	width: 1150px;
+}
+
+.carousel-images,
+.carousel-images-container {
+	height: 675px;
 }
 
 .carousel-images {
-    height:675px;
-    overflow:scroll;
-    width:1011px;
+    overflow: scroll;
     z-index: 998;
+}
+
+.carousel-images-container {
+	left: -110px;
+	position: absolute;
+	top: 0;
 }
 
 .carousel-overlay {
     background: url(images/carousel-overlay.png) no-repeat;
-    height: 986px;
+    height: 917px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 1011px;
     z-index: 999;
 }
 
@@ -672,7 +733,6 @@ a img{
 .carousel-links2 {
 	left: 0;
 	position: absolute;
-	width: 1011px;
 	z-index: 1000;
 }
 
@@ -735,6 +795,13 @@ a img{
 }
 .carousel-links2 .carousel-ln-r .button_image {
 	background: url("images/Android Tablet logo.png") no-repeat scroll 0 0 transparent;
+}
+
+.carousel-nav {
+	left: 0;
+	position: absolute;
+	top: 675px;
+	z-index: 1000;
 }
 
 /************************************************************  FOOTER   *********************************************************************/

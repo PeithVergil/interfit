@@ -44,10 +44,14 @@
 			(function($) {
 		        $(function(){
 					$(".carousel-images").CloudCarousel({			
-						xPos: 505,
+						//xPos: 470,
+						//yPos: 140,
+						//xRadius: 940/1.4,
+						//yRadius: 917/4.6,
+						xPos: 575,
 						yPos: 150,
-						xRadius: 1011/1.4,
-						yRadius: 986/4.6,
+						xRadius: 940/1.438,
+						yRadius: 917/5.0,
 						buttonLeft: $('.left_nav_button'),
 						buttonRight: $('.right_nav_button'),
 					});
@@ -57,18 +61,27 @@
 	    <?php } ?>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="header">
-				<div class="ip-1">
-					<div>
-						<a href="index.html" id="logo"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="logo"/></a>
-						<div class="navigation">
-							<ul>
-								<li><a href="<?php echo esc_url(home_url()); ?>">Home</a></li>
-								<li><a href="<?php echo esc_url( home_url( '/programs/' ) ); ?>">Programs</a></li>
-								<li><a href="<?php echo esc_url( home_url( '/visual-training-stations/' ) ); ?>">Visual Training Stations</a></li>
-							</ul>
+		<div class="container">
+			<div id="head" class="row show-grid">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="container">
+							<a href="<?php echo esc_url(home_url()); ?>" class="brand">
+								<img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="logo"/>
+							</a>
+							
+							<div id="nav-buttons" class="pull-right">
+								<a class="btn btn-primary" href="<?php echo esc_url(home_url()); ?>">
+									Home
+								</a>
+								<a class="btn btn-primary" href="<?php echo esc_url( home_url( '/programs/' ) ); ?>">
+									Programs
+								</a>
+								<a class="btn btn-primary" href="<?php echo esc_url( home_url( '/visual-training-stations/' ) ); ?>">
+									Visual Training Stations
+								</a>
+							</div>
 						</div>
-					</div>
+					</div><!-- .navbar-inner -->
 				</div>
-			</div>
+			</div><!-- #head -->
